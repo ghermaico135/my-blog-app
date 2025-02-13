@@ -21,7 +21,7 @@ function App() {
                   <Route path="Write" element={<Write/>} /> 
               </Route>  
 
-              <Route path="/login" element={<NoLayout />}>
+              <Route path="/Login" element={<NoLayout />}>
                   <Route index element={<Login/>} /> 
               </Route>
 

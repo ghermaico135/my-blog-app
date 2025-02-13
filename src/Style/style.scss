@@ -1,0 +1,59 @@
+$lightGreen :rgba(123, 131, 126, 0.933);
+
+.app{
+    .container{
+        .auth{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color:$lightGreen;
+            height: 100vh;
+            
+
+            h1{
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: teal;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                padding:50px;
+                width: 200px;
+                gap: 10px;
+                background-color: #fff;
+               
+                input{
+                    border: none;
+                    border-bottom:2px solid gray ;
+                    padding:10px;
+                    outline: none;
+                }
+
+                button{
+                    padding: 10px;
+                    background-color: teal;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    color: #fff;
+                }
+                p{
+                    color: red;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            
+                span{
+                    text-align: center;
+                    Link{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+     
+       
+    }
+}
