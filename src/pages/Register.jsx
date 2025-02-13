@@ -11,7 +11,7 @@ function Register() {
       <input type="email" placeholder='Email' required/>
       <input type="password" placeholder='password' required/>
       <button>Register</button>
-      <span><p>If you have an account?</p> <Link to="/Login">Login here</Link></span>
+      <span><p>If you have an account?</p> <Link className="link" to="/Login">Login here</Link></span>
     </form>
   </div>
   )
