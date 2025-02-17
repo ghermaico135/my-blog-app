@@ -3,6 +3,7 @@ import logo from "../assets/img/logo.png";
 import edit from "../assets/img/edit.png";
 import Delete from "../assets/img/delete.png"
 import { Link } from 'react-router-dom';
+import Menu from './Menu';
 
 function Single() {
   return (
@@ -75,7 +76,7 @@ function Single() {
           
       </div>
       <div className="menu">
-        m
+          <Menu />
       </div>
     </div>
   )
