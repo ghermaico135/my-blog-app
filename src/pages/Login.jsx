@@ -30,7 +30,7 @@ function login() {
 
   return (
     <div className="auth">
-      <h1> Register</h1>
+      <h1> Login</h1>
       <form >
         <input type="text"  name="username" value={inputs.username }placeholder='username' required onChange={handleChange}/>
         <input type="password" name="password" value={inputs.password} placeholder='password'  required onChange={handleChange} />
