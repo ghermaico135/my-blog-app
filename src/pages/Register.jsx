@@ -14,14 +14,13 @@ function Register() {
   }
 
 
-  const submitHandler = async (e) =>{
+  const handleSubmit = async (e) =>{
     e.preventDefault()
     try{
-      
-      // const res = await axios.post("http://localhost:5173/api/auth/register",inputs)
-      // console.log(res)
+      const res = await axios.post("http://localhost:3000/api/auth/register",inputs)
+      console.log("successful",res.data)
     }catch(err){
-      console.log(err)
+      console.error("error", err.response?.data || err.message)
     }
   }
 
@@ -33,7 +32,7 @@ function Register() {
       <input type="text" name="username" placeholder='username' required onChange={handleChange}/>
       <input type="email" name="email" placeholder='Email' required onChange={handleChange}/>
       <input type="password" name="password" placeholder='password' required  onChange={handleChange}/>
-      <button onClick={submitHandler}>Register</button>
+      <button onClick={handleSubmit}>Register</button>
       <span><p>If you have an account?</p> <Link className="link" to="/Login">Login here</Link></span>
     </form>
   </div>
