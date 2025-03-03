@@ -7,12 +7,15 @@ import { AuthContext } from '../context/authContext'
 
 function Navbar() {
 
-  const {currentUser} = useContext(AuthContext)
+  const {currentUser,logout} = useContext(AuthContext)
   return (
     <div className="navbar">
       <div className="container">
         <div className="logo">
+          <Link to="/"> 
           <img src={logo} alt="logo" />
+          </Link>
+          
         </div>
         <div className="links"> 
             <Link className="link" to="/?cat=art"><h6>ART</h6></Link>
